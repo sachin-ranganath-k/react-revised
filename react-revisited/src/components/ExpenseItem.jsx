@@ -2,12 +2,17 @@ import React from "react";
 import "./ExpenseItem.css";
 
 const ExpenseItem = () => {
+
+    const expenseDate=new Date(2022, 9, 25);
+    const expenseItem='Home loan';
+    const expenseAmount= 20000
+
   return (
     <div className="expense-item">
-      <div>Oct 1, 2022</div>
+      <div>{expenseDate.toISOString()}</div>
       <div className="expense-item__description">
-        <h2>Home Loan</h2>
-        <div className="expense-item__price">20,000/-</div>
+        <h2>{expenseItem}</h2>
+        <div className="expense-item__price">{expenseAmount}/-</div>
       </div>
     </div>
   );
