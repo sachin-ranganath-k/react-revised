@@ -1,17 +1,15 @@
 import Expenses from "./components/Expenses";
 
 function App() {
+
   const expenses = [
     {
       id: "e1",
       title: "News Paper",
-      amount: 500.00,
+      amount: 500.0,
       date: new Date(2022, 7, 14),
     },
-    { id: "e2", 
-      title: "New TV", 
-      amount: 799.49, 
-      date: new Date(2022, 2, 12) },
+    { id: "e2", title: "New TV", amount: 799.49, date: new Date(2022, 2, 12) },
     {
       id: "e3",
       title: "Home loan",
@@ -26,8 +24,8 @@ function App() {
     },
   ];
   return (
-    <div>
-      <Expenses allItems={expenses}/>
+    <div style={{ margin: "0 10% 0 10%" }}>
+      <Expenses allItems={expenses} />
     </div>
   );
 }

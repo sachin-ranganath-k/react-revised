@@ -27,6 +27,7 @@ const Expenses = (propsFromApp) => {
         expenseAmount={propsFromApp.allItems[3].amount}
         expenseDate={propsFromApp.allItems[3].date}
       />
+
     </div>
   );
 };
