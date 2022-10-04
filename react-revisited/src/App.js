@@ -1,7 +1,7 @@
+import AddNewExpense from "./components/AddNewExpense/AddNewExpense";
 import Expenses from "./components/Expenses";
 
 function App() {
-
   const expenses = [
     {
       id: "e1",
@@ -25,6 +25,7 @@ function App() {
   ];
   return (
     <div style={{ margin: "0 10% 0 10%" }}>
+      <AddNewExpense />
       <Expenses allItems={expenses} />
     </div>
   );
